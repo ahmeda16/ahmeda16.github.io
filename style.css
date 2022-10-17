@@ -1,0 +1,76 @@
+body 
+{
+    margin: 0px;
+}
+
+.navbar-center svg
+{
+    padding: 0px
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button 
+{
+    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.logo
+{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links
+{
+    list-style: none;
+}
+
+.nav__links li
+{
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+.nav__links li a
+{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover
+{
+    color: rgba(110, 109, 109);
+}
+
+button 
+{
+    margin-left: 35px;
+    padding: 9px 25px;
+    background-color: rgb(110, 109, 109);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover
+{
+    background-color: rgba(110, 109, 109,0.8);
+}
