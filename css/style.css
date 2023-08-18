@@ -1,27 +1,18 @@
+@charset "UTF-8"; /* Set charset UTF-8 */
+/*
+    css/style.css
+    Author: Syed Abraham Ahmed
+*/
+
 body 
 {
     margin: 0px;
+    padding: 0px;
 }
 
-.navbar-center svg
+html
 {
-    padding: 0px
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
-}
-
-li, a, button 
-{
-    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 header
@@ -30,6 +21,35 @@ header
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.font
+{
+    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* NAV */
+.navbar-center svg
+{
+    padding: 0px
+}
+
+li, a, button
+{
+    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
 }
 
 .logo
@@ -63,7 +83,7 @@ button
 {
     margin-left: 35px;
     padding: 9px 25px;
-    background-color: rgb(110, 109, 109);
+    background-color: rgb(182, 182, 182);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -72,5 +92,6 @@ button
 
 button:hover
 {
-    background-color: rgba(110, 109, 109,0.6);
+    background-color: rgba(164, 164, 164, 0.6);
 }
+

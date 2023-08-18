@@ -4,6 +4,7 @@
 
 <head>
 
+    <!-- Meta Data -->
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,24 +12,65 @@
     <meta name="author" content="Syed Abraham Ahmed">
     <title>Home</title>
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/styles.css" />
 </head>
 
 <body>
-
-    <header>
-        <img class="logo" src="images/logo.jpeg" 
+    <div id="default" class="anchor"></div>
+    <!-- LOGO HEADER & NAVIGATIOR HEADER -->
+    <header id="nav-header" class="header">
+        <!-- LOGO -->
+        <img class="logo" src="images/logow.jpeg" 
         width="450"
-        height="125"
+        height="100"
         alt="logo">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+
+        <!-- NAV -->
+        <nav class="nav__links" id="nav">
+            <ul class="col-12">
+                <li><a href="#default">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
-        <a class="cta" href="contact.html"><button>Contact</button></a>
+        <a class="cta" href="#contact"><button>Contact</button></a>
     </header>
+
+    <!-- MAIN SECTION-->
+    <main>
+        
+        <!-- ABOUT -->
+        <div id="about" class="anchor"></div>
+            <div style="padding: 0px 5%;">
+                
+                <h1 class="font">About</h1>
+                <hr>
+            </div>
+            <div style="padding: 0px 10%;">
+
+                <!-- QUOTE -->
+                <h2 class="font">
+                    <br>Quote<br>
+                </h2>
+                <p style="font-family: 'Times New Roman', Times, serif">
+                    <br>
+                    My favourite quote, as I used it for my highschool graduation<br>
+                    from my brother and sister Syed Bilal Ahmed and Miral Ahmed.<br>
+                    <br>
+                    "Aim for the bushes" - Danson, The Other Guys<br>
+                    <br>
+                </p>
+            </div>
+        </div>
+        <!-- MAIN FOOTER -->
+        <footer>
+            <hr />
+            <small style="font-size: 10px; color:rgb(82, 82, 82);" class="font"><a href="https://github.com/ahmeda16/ahmeda16.github.io" target="_blank">Source Code</a> | Website Content &copy; 2020-2023 Syed Abraham Ahmed</small>
+        </footer>
+
+        </div>
+    </main>
 </body>
 
 
