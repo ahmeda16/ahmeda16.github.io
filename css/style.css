@@ -16,12 +16,11 @@ html
     scroll-behavior: smooth;
 }
 
-header
+.font
 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 5%;
+    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000000;
+    text-decoration: none;
 }
 
 * {
@@ -31,12 +30,25 @@ header
     background-color: #ffffff;
 }
 
-.font
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+footer
 {
     font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #000000;
-    text-decoration: none;
+    font-size: 14px; 
+    color:rgb(82, 82, 82); 
+    padding-left: 10%;
 }
+
+
+
+
 
 /* NAV */
 .navbar-center svg
