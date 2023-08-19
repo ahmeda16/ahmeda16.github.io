@@ -5,6 +5,8 @@
 */
 
 @import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold); 
+
+/* LAYOUT (header, footer, body, html, *) */
 body 
 {
     margin: 0px;
@@ -35,6 +37,7 @@ header
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border: 1px solid black;
     padding: 30px 5%;
 }
 
@@ -43,6 +46,7 @@ footer
     font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px; 
     color:rgb(82, 82, 82); 
+    padding: 0px 5%;
 }
 
 /* NAV */
@@ -50,6 +54,12 @@ footer
 {
     padding: 0px
 }
+
+.content 
+{
+    padding-top: 10%;
+}
+
 
 li, a, button
 {
@@ -69,6 +79,7 @@ li, a, button
 .nav__links
 {
     list-style: none;
+    text-align-last: right;
 }
 
 .nav__links li

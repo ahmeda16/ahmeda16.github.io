@@ -4,7 +4,7 @@
 
 <head>
 
-    <!-- Meta Data -->
+    <!-- META DATA -->
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,15 @@
     <meta name="author" content="Syed Abraham Ahmed">
     <title>Home</title>
 
-    <!-- Stylesheets -->
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/styles.css" />
 </head>
 
 <body>
+    
     <!-- LOGO HEADER & NAVIGATIOR HEADER -->
-    <header id="nav-header" class="header">
+    <div id="default" class="anchor"></div>
+    <header id="navheader" class="header">
         <!-- LOGO -->
         <img class="logo" src="images/logow.jpeg" 
         width="450"
@@ -27,24 +29,44 @@
 
         <!-- NAV -->
         <nav class="nav__links" id="nav">
-            <ul class="col-12">
-                <li><a href="https://ahmeda16.github.io/#default">Home</a></li>
-                <li><a href="https://ahmeda16.github.io/#about">About</a></li>
+            <ul class="nav__links">
+                <li><a href="#default">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
-        <a class="cta" href="https://ahmeda16.github.io/#contact"><button>Contact</button></a>
+        <a class="cta" href="#contact"><button>Contact</button></a>
     </header>
 
     <!-- MAIN SECTION-->
     <main>
+        <!-- ABOUT -->
+        <div id="about" class="anchor"></div>
+            <div style="padding: 0px 5%;">
+                
+                <br>
+                <h1 class="font">Blog</h1>
+                <hr>
+
+            </div>
+            <div style="padding: 0px 10%;">
+
+            </div>
+
         <!-- MAIN FOOTER -->
         <footer>
-            <hr />
-            <small><a href="https://github.com/ahmeda16/ahmeda16.github.io" target="_blank">Source Code</a> | Website Content &copy; 2020-2023 Syed Abraham Ahmed</small>
-        </footer>
+        <hr />
+        <div class="footer">
+            
+            <small>
+                <br />
+                <a href="https://github.com/ahmeda16/ahmeda16.github.io" target="_blank">Source Code </a> | Website Content &copy; 2020-2023 Syed Abraham Ahmed
+            </small>
 
+            <br /><br />
         </div>
+        </footer>
+        
     </main>
 </body>
 
