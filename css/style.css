@@ -114,3 +114,20 @@ button:hover
     background-color: rgba(164, 164, 164, 0.6);
 }
 
+/* GRID & ROWS */
+.container
+{
+    display: grid;
+    align-items:normal;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 0px;
+}
+
+
+
+/* IMAGE RELATED*/
+
+img
+{
+    max-width:70%;
+}
