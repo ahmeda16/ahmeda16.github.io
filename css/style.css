@@ -4,130 +4,115 @@
     Author: Syed Abraham Ahmed
 */
 
-@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold); 
+@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 
 /* LAYOUT (header, footer, body, html, *) */
-body 
-{
-    margin: 0px;
-    padding: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-html
-{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.font
-{
-    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #000000;
-    text-decoration: none;
+.font {
+  font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #000000;
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
-header
-{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border: 1px solid black;
-    padding: 30px 5%;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid black;
+  padding: 30px 5%;
 }
 
-footer
-{
-    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px; 
-    color:rgb(82, 82, 82); 
-    padding: 0px 5%;
+footer {
+  font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  color: rgb(82, 82, 82);
+  padding: 0px 5%;
 }
 
 /* NAV */
-.navbar-center svg
-{
-    padding: 0px
+.navbar-center svg {
+  padding: 0px;
 }
 
-.content 
-{
-    padding-top: 10%;
+.content {
+  padding-top: 10%;
 }
 
-
-li, a, button
-{
-    font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000000;
-    text-decoration: none;
+li,
+a,
+button {
+  font-family: "SoDo Sans Semibold", Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
 }
 
-.logo
-{
-    cursor: pointer;
-    margin-right: auto;
+.logo {
+  cursor: pointer;
+  margin-right: auto;
 }
 
-.nav__links
-{
-    list-style: none;
-    text-align-last: right;
+.nav__links {
+  list-style: none;
+  text-align-last: right;
 }
 
-.nav__links li
-{
-   display: inline-block;
-   padding: 0px 20px;
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.nav__links li a
-{
-    transition: all 0.3s ease 0s;
+.nav__links li a {
+  transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover
-{
-    color: rgba(110, 109, 109);
+.nav__links li a:hover {
+  color: rgba(110, 109, 109);
 }
 
-button 
-{
-    margin-left: 35px;
-    padding: 9px 25px;
-    background-color: rgb(182, 182, 182);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+button {
+  margin-left: 35px;
+  padding: 9px 25px;
+  background-color: rgb(182, 182, 182);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-button:hover
-{
-    background-color: rgba(164, 164, 164, 0.6);
+button:hover {
+  background-color: rgba(164, 164, 164, 0.6);
 }
 
 /* GRID & ROWS */
-.container
-{
-    display: grid;
-    align-items:normal;
-    grid-template-columns:1fr 1fr;
-    grid-gap: 0px;
+.container {
+  display: grid;
+  align-items: normal;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
 }
-
-
 
 /* IMAGE RELATED*/
 
-img
-{
-    max-width:70%;
+img {
+  max-width: 70%;
 }
