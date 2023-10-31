@@ -51,6 +51,11 @@ footer {
   padding: 0px;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 .content {
   padding-top: 10%;
 }
@@ -156,4 +161,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   opacity: 0.9;
+}
+
+/* ANCHOR */
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
 }
