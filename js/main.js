@@ -1,8 +1,6 @@
 /*
     js/main.js
     Author: Syed Abraham Ahmed
-
-    INACTIVE - WILL IMPLEMENT STICKY NAVBAR
 */
 
 
