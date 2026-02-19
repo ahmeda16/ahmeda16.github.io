@@ -1,11 +1,4 @@
-- name: University of Washington 
+- name: University of Manitoba
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
-
-- name: University of Illinois at Urbana-Champaign
-  description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    B.S. in Computer Engineering, advised by <a href="https://umanitoba.ca/engineering/faculty-staff/electrical-and-computer-engineering-faculty-and-staff/ahmed-ashraf">Ahmed Ashraf</a>, and <a href="https://umanitoba.ca/engineering/faculty-staff/mechanical-engineering/philip-ferguson">Philip Ferguson</a>
+  dates: Fall 2020 - Summer 2026

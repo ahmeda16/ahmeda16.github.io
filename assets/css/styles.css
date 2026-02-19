@@ -1,0 +1,7 @@
+---
+# frontmatter so Jekyll processes this file
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -18,25 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Keunhong Park
-name: Keunhong Park
-position: Research Scientist
-email: gsmv8rlm8@mozmail.com
+title: Syed Abraham Ahmed
+name: Syed Abraham Ahmed
+position: Computer Engineering Undergraduate Student
+email: syed[dot]abraham14[at]gmail[dot]com
 description: |
-  I am a founding member at [World Labs](https://www.worldlabs.ai/blog) where I lead model pretraining. 
-  My research focuses on world models—from large-scale pretraining to real-time generation---combining diffusion models with 3D scene representations. 
-  See our recent [Marble](https://www.worldlabs.ai/blog/marble-world-model) and [RTFM](https://www.worldlabs.ai/blog/rtfm) releases.
 
-  Previously I was a research scientist at [Google](https://ai.google/research/) where 
-  I built technology to [generate 3D assets](https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/) 
-  for products on Google Search. I received my Ph.D from the [University of Washington](https://grail.cs.washington.edu/) 
-  in 2021, advised by [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
+  A Computer Engineering (Co-op) Undergraduate student at [University of Manitoba](https://umanitoba.ca/). My experience is mainly in robotics, deep learning/genAI systems, systems engineering, and technical work in embedded, ROS2, and perception fields.
+
+  Previously, I interned at [StandardAero](https://standardaero.com/), [PTx Trimble](https://ptxtrimble.com/en), and the [Canadian Grain Commission](https://www.grainscanada.gc.ca/en/).
+  
+  I'm currently leading the Reinforcement Learning module for my BSc final project, Stuart - The Smart Micromouse Maze Solver combining a PCB-based robot design with Deep Q-Learning for fast maze solving.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: KeunhongP
-github_username: keunhong
-google_scholar: HVZb-5oAAAAJ
-google_analytics: G-MFWSBLRKG0
+url: "https://ahmeda16.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: syed-abraham-ahmed
+github_username: ahmeda16
+google_scholar: fgr0lvcAAAAJ
+google_analytics: 
 
 # Build settings
 plugins:
