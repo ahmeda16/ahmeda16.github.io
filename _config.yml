@@ -29,8 +29,8 @@ description: |
   Previously, I interned at [StandardAero](https://standardaero.com/), [PTx Trimble](https://ptxtrimble.com/en), and the [Canadian Grain Commission](https://www.grainscanada.gc.ca/en/).
   
   I'm currently leading the Reinforcement Learning module for my BSc final project, Stuart - The Smart Micromouse Maze Solver combining a PCB-based robot design with Deep Q-Learning for fast maze solving.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ahmeda16.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "ahmeda16.github.io"
+baseurl: ""
 linkedin_username: syed-abraham-ahmed
 github_username: ahmeda16
 google_scholar: fgr0lvcAAAAJ
