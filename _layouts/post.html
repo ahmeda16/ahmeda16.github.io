@@ -7,7 +7,7 @@ layout: default
       <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
         {{ page.title }}
       </h1>
-      <p class="text-text-muted mt-2">
+      <p class="font-sans text-text-muted mt-2">
         {{ page.date | date: "%B %d, %Y" }}
         {% if page.tags.size > 0 %}
         <span class="mx-2">·</span>
@@ -18,12 +18,27 @@ layout: default
       </p>
     </header>
 
-    <div class="prose prose-lg max-w-none">
+    <div class="
+    font-latex
+    prose prose-lg max-w-none
+    prose-headings:font-display
+    prose-headings:tracking-tight
+    prose-h1:text-4xl prose-h1:md:text-5xl
+    prose-h2:text-2xl prose-h2:md:text-3xl
+    prose-h3:text-xl  prose-h3:md:text-2xl
+    prose-p:leading-relaxed
+    prose-a:no-underline hover:prose-a:underline
+    prose-blockquote:border-l-2 prose-blockquote:border-border prose-blockquote:text-text-muted
+    prose-code:font-mono prose-code:text-sm
+    prose-pre:bg-surface-muted prose-pre:border prose-pre:border-border
+    prose-pre:rounded-xl prose-pre:px-5 prose-pre:py-4
+    prose-pre:overflow-x-auto
+    ">
       {{ content }}
     </div>
 
-    <footer class="mt-12 pt-8 border-t border-border">
-      <a href="{{ '/blog.html' | relative_url }}" class="inline-flex items-center text-link hover:text-link-hover transition-colors no-underline">
+    <footer class="font-sans mt-12 pt-8 border-t border-border">
+      <a href="{{ '/blog' | relative_url }}" class="inline-flex items-center text-link hover:text-link-hover transition-colors no-underline">
         ← Back to blog
       </a>
     </footer>

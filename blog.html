@@ -15,7 +15,7 @@ title: Blog
           <h2 class="font-display text-2xl font-semibold text-text group-hover:text-text-body transition-colors">
             {{ post.title }}
           </h2>
-          <p class="text-text-muted text-sm mt-1">
+          <p class="font-sans text-text-muted text-sm mt-1">
             {{ post.date | date: "%B %d, %Y" }}
             {% if post.tags.size > 0 %}
             <span class="mx-2">·</span>
@@ -25,9 +25,9 @@ title: Blog
             {% endif %}
           </p>
           {% if post.description %}
-          <p class="text-text-body mt-2">{{ post.description }}</p>
+          <p class="font-sans text-text-body mt-2">{{ post.description }}</p>
           {% elsif post.excerpt %}
-          <p class="text-text-body mt-2">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          <p class="font-sans text-text-body mt-2">{{ post.excerpt | strip_html | truncate: 150 }}</p>
           {% endif %}
         </a>
       </li>

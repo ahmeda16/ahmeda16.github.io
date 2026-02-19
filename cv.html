@@ -7,10 +7,10 @@ title: CV - Syed Abraham Ahmed
 <header class="flex flex-col md:flex-row print:flex-row md:items-center print:items-center gap-6 pb-6 border-b border-border-subtle">
   <div class="flex-1">
     <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">{{ site.name }}</h1>
-    <p class="text-text-body text-lg mt-1">{{ site.position }}</p>
+    <p class="font-sans text-lg mt-1">{{ site.position }}</p>
   </div>
 
-  <div class="text-sm text-text-body space-y-1 md:text-right print:text-right">
+  <div class="font-sans text-sm text-text-body space-y-1 md:text-right print:text-right">
     <p>
       <a href="{{ site.url }}" class="hover:text-text no-underline">
         {% include icons/globe.html class="w-4 h-4 inline mr-1" %}
@@ -44,10 +44,10 @@ title: CV - Syed Abraham Ahmed
   {% for school in site.data.education %}
   <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
     <div class="flex-1">
-      <p class="font-semibold">{{ school.name }}</p>
-      <p class="text-text-body text-sm">{{ school.description }}</p>
+      <p class="font-display">{{ school.name }}</p>
+      <p class="font-sans text-text-body text-sm">{{ school.description }}</p>
     </div>
-    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+    <div class="font-sans text-text-muted text-sm md:text-right flex-shrink-0">
       {{ school.dates }}
     </div>
   </div>
@@ -60,10 +60,10 @@ title: CV - Syed Abraham Ahmed
   {% for job in site.data.employment %}
   <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
     <div class="flex-1">
-      <p class="font-semibold">{{ job.company }}</p>
-      <p class="text-text-body text-sm">{{ job.description }}</p>
+      <p class="font-display">{{ job.company }}</p>
+      <p class="font-sans text-text-body text-sm">{{ job.description }}</p>
     </div>
-    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+    <div class="font-sans text-text-muted text-sm md:text-right flex-shrink-0">
       {{ job.dates }}<br>
       {{ job.location }}
     </div>

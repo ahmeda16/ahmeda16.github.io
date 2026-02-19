@@ -26,6 +26,7 @@
   --font-serif: 'Crimson Pro', Georgia, Cambria, serif;
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-latex: "Computer Modern Serif"', system-ui, sans-serif
 }
 
 @layer base {

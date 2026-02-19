@@ -53,7 +53,3 @@ def gaussian(x, mu=0, sigma=1):
 
 > The best way to predict the future is to invent it.
 > — Alan Kay
-
----
-
-That's it for now. More posts coming soon!

@@ -1,0 +1,16 @@
+/* assets/css/rouge.css */
+/* Markdown Programming Syntax (universal)*/
+.highlight { background: transparent; }
+.highlight pre { background: rgb(15, 23, 42, 1); margin: 0; }
+
+/* tokens */
+.highlight .c { color: #8b949e; } /* comment */
+.highlight .k { color: #ff7b72; } /* keyword */
+.highlight .o { color: #ff7b72; } /* operator */
+.highlight .s { color: #a5d6ff; } /* string */
+.highlight .na { color: #79c0ff; } /* attribute */
+.highlight .nb { color: #79c0ff; } /* built-in */
+.highlight .nc { color: #d2a8ff; } /* class */
+.highlight .nf { color: #d2a8ff; } /* function */
+.highlight .nt { color: #7ee787; } /* tag */
+.highlight .mi { color: #79c0ff; } /* number */

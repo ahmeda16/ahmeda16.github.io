@@ -24,11 +24,9 @@ position: Computer Engineering Undergraduate Student
 email: syed[dot]abraham14[at]gmail[dot]com
 description: |
 
-  A Computer Engineering (Co-op) Undergraduate student at [University of Manitoba](https://umanitoba.ca/). My experience is mainly in robotics, deep learning/genAI systems, systems engineering, and technical work in embedded, ROS2, and perception fields.
-
-  Previously, I interned at [StandardAero](https://standardaero.com/), [PTx Trimble](https://ptxtrimble.com/en), and the [Canadian Grain Commission](https://www.grainscanada.gc.ca/en/).
+  A Computer Engineering (Co-op) undergraduate student at [University of Manitoba](https://umanitoba.ca/). My experience is mainly in robotics, deep learning/genAI systems, systems engineering, and technical work in embedded, ROS2, and perception fields.
   
-  I'm currently leading the Reinforcement Learning module for my BSc final project, Stuart - The Smart Micromouse Maze Solver combining a PCB-based robot design with Deep Q-Learning for fast maze solving.
+  Previously, I interned at [StandardAero](https://standardaero.com/), [PTx Trimble](https://ptxtrimble.com/en), and the [Canadian Grain Commission](https://www.grainscanada.gc.ca/en/) in software, and robotics roles.
 baseurl: ""
 url: "https://ahmeda16.github.io"
 linkedin_username: syed-abraham-ahmed
@@ -52,6 +50,13 @@ defaults:
     values:
       layout: "post"
       math: false
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default.
