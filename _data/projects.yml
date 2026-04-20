@@ -1,0 +1,44 @@
+- id: stuart
+  title: "Stuart: The Smart Micromouse Maze Solver"
+  organization: "Personal"
+  date: "March 2026"
+  description: "PCB-based micromouse with deterministic maze exploration and a PPO reinforcement learning policy trained to minimize traversal time."
+  url:
+  image: "stuart-1.jpg"
+  video:
+
+- id: abraham-gpt
+  title: "AbrahamGPT"
+  organization: "Personal"
+  date: "Jan 2026"
+  description: "Fine-tuned GPT-2 on message history with conversation context, preprocessing pipelines, and LLM-based evaluation."
+  url:
+  image: "abraham-gpt.jpeg"
+  video:
+
+- id: rover-2
+  title: "Project Perry Embedded Subsystem"
+  organization: "UMRT"
+  date: "Jan 2025"
+  description: "Embedded subsystem redesign for the University of Manitoba Robotics Team second rover, with a single board computer and a microcontroller."
+  url:
+  image: "pp-2-embedded.png"
+  video:
+
+- id: rover-1
+  title: "Prairie Pioneer"
+  organization: "UMRT"
+  date: "Aug 2024"
+  description: "Inaugural rover built for the University of Manitoba Robotics Team's first Canadian International Rover Challenge entry in August 2024."
+  url:
+  image: "pp-1.png"
+  video:
+
+- id: cdh-tsat6-camera-driver
+  title: "CDH-TSAT6 Cubesat Camera Driver"
+  organization: "UMSATS"
+  date: "May 2023"
+  description: "Low-level camera driver in C using DMA over UART for high-throughput image capture to onboard memory on TSAT-6's CDH subsystem."
+  url:
+  image: "picam-1.png"
+  video:

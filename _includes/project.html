@@ -1,0 +1,20 @@
+<div class="bg-white rounded-lg overflow-hidden border border-gray-300 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 ease-out">
+  <a href="{{ include.p.url }}" target="_blank" rel="noopener" class="block no-underline">
+    <div class="aspect-square overflow-hidden">
+      {% if include.p.video %}
+      <video autoplay loop muted playsinline class="w-full h-full object-cover">
+        <source src="{{ '/images/' | append: include.p.video | relative_url }}" type="video/mp4">
+        <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.h.title }}" class="w-full h-full object-cover">
+      </video>
+      {% else %}
+      <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.h.title }}" class="w-full h-full object-cover">
+      {% endif %}
+    </div>
+    <div class="p-4">
+      <h3 class="font-display font-semibold text-text">
+        {{ include.p.title }}
+      </h3>
+      <p class="font-sans text-sm text-text-muted mt-2">{{ include.p.description }}</p>
+    </div>
+  </a>
+</div>

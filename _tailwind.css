@@ -17,10 +17,10 @@
   --color-border: #e5e5e5;
   --color-border-subtle: #f0f0f0;
 
-  /* Link colors */
-  --color-link: #666666;
-  --color-link-hover: #171717;
-  --color-link-underline: #d4d4d4;
+  /* Link colors — RoyalBlue (LaTeX dvipsnames) */
+  --color-link: #0071BC;
+  --color-link-hover: #00508a;
+  --color-link-underline: #93c5fd;
 
   /* Fonts */
   --font-serif: 'Crimson Pro', Georgia, Cambria, serif;

@@ -1,0 +1,35 @@
+- id: wec-2026
+  title: "4th Place in Programming - Western Engineering Competition 2026"
+  venue: "Western Engineering Student Societies, Jan 2026"
+  description: ""
+  url: 
+  image: "wec2026.jpeg"
+
+- id: umec-2025-programming
+  title: "1st Place in Programming - University of Manitoba Engineering Competition 2025"
+  venue: "University of Manitoba Engineering Society, Oct 2025"
+  description: ""
+  url:
+  image: "umec2025.jpeg"
+
+
+- id: umec-2024-design
+  title: "1st Place in Senior Design - University of Manitoba Engineering Competition 2024"
+  venue: "University of Manitoba Engineering Society, Oct 2024"
+  description: ""
+  url:
+  image: "umec2024.jpeg"
+
+- id: cec-2024
+  title: "1st Place in Programming - Canadian Engneering Competition 2024"
+  venue: "Canadian Federation of Engineering Students, Mar 2024"
+  description: ""
+  url: "https://github.com/ahmeda16/cec-2024-programming-competition"
+  image: "cec2024.jpeg"
+
+- id: wec-2024
+  title: "2nd Place in Programming — Western Engineering Competition 2024"
+  venue: "Western Engineering Student Societies, Jan 2024"
+  description: ""
+  url: "https://github.com/ahmeda16/pleasecompile-wec2024-cogin"
+  image: "wec2024.jpeg"

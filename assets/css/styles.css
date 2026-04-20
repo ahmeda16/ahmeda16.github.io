@@ -5,3 +5,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Prose body text color — override unresolved --tw-prose-body variable */
+.prose {
+  color: #404040;
+}
+
+/* Link styles — RoyalBlue (LaTeX dvipsnames #0071BC) */
+/* Only targets content links; nav/card/image links use class="no-underline" and are excluded */
+a:not(.no-underline) {
+  color: #0071BC;
+  text-decoration-color: #93c5fd;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:not(.no-underline):hover {
+  color: #00508a;
+}

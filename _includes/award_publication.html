@@ -1,0 +1,32 @@
+<div class="flex items-start gap-6 py-6">
+  <!-- Image (clickable, links to URL) -->
+  {% if include.item.image %}
+  <a href="{{ include.item.url }}" target="_blank" rel="noopener" class="flex-shrink-0 no-underline">
+    <img
+      src="{{ '/images/' | append: include.item.image | relative_url }}"
+      alt="{{ include.item.title }}"
+      class="w-24 h-24 object-cover rounded-lg"
+    >
+  </a>
+  {% endif %}
+
+  <!-- Text content -->
+  <div class="flex-1 min-w-0">
+    <h3 class="font-display font-semibold text-text leading-snug">
+      {{ include.item.title }}
+    </h3>
+    {% if include.item.venue %}
+    <p class="font-sans text-sm text-text-muted mt-0.5">{{ include.item.venue }}</p>
+    {% endif %}
+    {% if include.item.description %}
+    <p class="font-sans text-sm text-text-muted mt-1">{{ include.item.description }}</p>
+    {% endif %}
+    {% if include.item.url %}
+    {% assign url_host = include.item.url | remove: "https://" | remove: "http://" | split: "/" | first %}
+    {% assign url_path = include.item.url | remove: "https://" | remove: "http://" | split: "/" | last %}
+    <a href="{{ include.item.url }}" target="_blank" rel="noopener" class="font-sans text-sm mt-2 inline-block">
+      {% if url_host contains "github.com" %}{{ url_path }}{% else %}{{ url_host }}{% endif %}
+    </a>
+    {% endif %}
+  </div>
+</div>

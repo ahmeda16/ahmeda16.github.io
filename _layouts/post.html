@@ -4,6 +4,11 @@ layout: default
 <article class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
     <header class="mb-8">
+      {% if page.image %}
+      <img src="{{ '/images/' | append: page.image | relative_url }}"
+           alt="{{ page.title }}"
+           class="w-full max-h-96 object-contain rounded-lg mb-6 bg-gray-50">
+      {% endif %}
       <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
         {{ page.title }}
       </h1>

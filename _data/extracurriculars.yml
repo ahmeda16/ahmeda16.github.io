@@ -1,0 +1,33 @@
+- organization: "Open Sauce"
+  role: "Volunteer"
+  description: "Volunteered at the most awesome hardware and maker convention."
+  dates: "Jul 2025"
+  url: "https://opensauce.com"
+
+- organization: "University of Manitoba Robotics Team"
+  role: "Advisor · Founder & President · Systems Lead · Embedded Lead"
+  description: "Established and led UMRT, guiding its inaugural participation in the 2024 Canadian International Rover Challenge to an 11th place finish among 20 international teams."
+  dates: "Jun 2023 - Present"
+  url: "https://umrt.ca"
+
+
+- organization: "University of Manitoba IEEE Student Branch"
+  role: "Vice Chair · Technical Activities Officer · Lab Manager"
+  description: "Led chapter operations across consecutive roles related to management, finance, and events."
+  dates: "Apr 2023 - Apr 2026"
+  url: "https://umieee.ca"
+
+
+- organization: "University of Manitoba Space Applications and Technology Society"
+  role: "TSAT-6 CDH Lead · TSAT-5/6 CDH Member"
+  description: "Led the Command and Data Handling subsystem of TSAT-6, winning first place among 10 teams in the Canadian Satellite Design Challenge 2023."
+  dates: "Oct 2021 - Sep 2023"
+  url: "https://umsats.ca/cubesat"
+
+- organization: "University of Manitoba Engineering Society"
+  role: "Electronic Communications Head Director · Finance Director · Electronic Communications Member"
+  description: "Served in finance, communications, and director roles supporting engineering student events and society operations."
+  dates: "May 2021 - Jan 2024"
+  url: "https://umes.mb.ca"
+
+
