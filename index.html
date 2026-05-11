@@ -3,18 +3,15 @@ layout: default
 title: Syed Abraham Ahmed
 ---
 
-<!-- Hero Section -->
 <section class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
     <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-8">
-      <!-- Portrait -->
       <div class="flex-shrink-0">
         <img src="{{ '/images/portrait.jpg' | relative_url }}"
              alt="{{ site.name }}"
              class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-lg">
       </div>
 
-      <!-- Bio -->
       <div class="flex-1">
         <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
           Hello, I'm {{ site.name }}
@@ -23,7 +20,6 @@ title: Syed Abraham Ahmed
           {{ site.description | markdownify }}
         </div>
 
-        <!-- Links -->
         <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
           <a href="{{ site.url }}/cv" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
             {% include icons/file.html class="w-4 h-4 mr-1.5" %}
@@ -50,21 +46,73 @@ title: Syed Abraham Ahmed
   </div>
 </section>
 
-<!-- Projects Section -->
 <section class="relative py-12 md:py-16">
-  <!-- Background with faded edges -->
   <div class="absolute inset-0 bg-surface-muted" style="mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);"></div>
   <div class="relative max-w-4xl mx-auto px-6">
     <h2 class="font-display text-2xl font-semibold text-text mb-8">Projects & Technical Work</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="mb-8 rounded-lg border border-gray-300 bg-white p-5 shadow-sm">
+      <p class="font-sans text-xs font-medium uppercase tracking-wide text-text-muted">Internship Work</p>
+      <div class="internship-grid detail-grid mt-5 grid grid-cols-1 gap-4 md:grid-cols-3" data-detail-grid>
+        <button type="button" class="detail-card project-panel rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm transition-all duration-200 ease-out" data-detail-trigger data-detail-template="internship-standardaero-detail" aria-expanded="false" aria-controls="internship-detail-drawer">
+          <span class="flex items-start gap-3">
+            <img src="https://www.google.com/s2/favicons?domain=standardaero.com&sz=64" alt="StandardAero logo" class="h-14 w-14 flex-shrink-0 rounded object-contain bg-white p-1.5 ring-1 ring-gray-200">
+            <span class="min-w-0">
+              <span class="block font-sans text-xs font-medium uppercase tracking-wide text-text-muted">StandardAero / 2025</span>
+              <span class="block font-display font-semibold text-text text-center mt-1">Software Engineering Intern</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="detail-card project-panel rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm transition-all duration-200 ease-out" data-detail-trigger data-detail-template="internship-ptx-trimble-detail" aria-expanded="false" aria-controls="internship-detail-drawer">
+          <span class="flex items-start gap-3">
+            <img src="https://www.google.com/s2/favicons?domain=ptxtrimble.com&sz=64" alt="PTx Trimble logo" class="h-14 w-14 flex-shrink-0 rounded object-contain bg-white p-1.5 ring-1 ring-gray-200">
+            <span class="min-w-0">
+              <span class="block font-sans text-xs font-medium uppercase tracking-wide text-text-muted">PTx Trimble / 2024</span>
+              <span class="block font-display font-semibold text-text text-center mt-1">Software Engineering Intern</span>
+            </span>
+          </span>
+        </button>
+        <button type="button" class="detail-card project-panel rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm transition-all duration-200 ease-out" data-detail-trigger data-detail-template="internship-cgc-detail" aria-expanded="false" aria-controls="internship-detail-drawer">
+          <span class="flex items-start gap-3">
+            <img src="https://www.google.com/s2/favicons?domain=grainscanada.gc.ca&sz=64" alt="Canadian Grain Commission logo" class="h-14 w-14 flex-shrink-0 rounded object-contain bg-white p-1.5 ring-1 ring-gray-200">
+            <span class="min-w-0">
+              <span class="block font-sans text-xs font-medium uppercase tracking-wide text-text-muted">Canadian Grain Commission / 2023</span>
+              <span class="block font-display font-semibold text-text text-center mt-1">Cyber Security Analyst Intern</span>
+            </span>
+          </span>
+        </button>
+        <div id="internship-detail-drawer" class="project-detail-drawer is-hidden" data-detail-drawer></div>
+        <template id="internship-standardaero-detail">
+          <div class="project-detail-inner">
+            <p class="font-sans text-sm leading-relaxed text-text-muted">
+              LabVIEW automation, engine test cell data acquisition with Visual Studio, C#, .NET, Microsoft SQL Server, SVN version control, and issue based tracking.
+            </p>
+          </div>
+        </template>
+        <template id="internship-ptx-trimble-detail">
+          <div class="project-detail-inner">
+            <p class="font-sans text-sm leading-relaxed text-text-muted">
+              ROS2 package development, C++/Python tooling, simulated LiDAR datasets, ROS bag analysis, PlotJuggler, Lua, Docker, and Jenkins workflows.
+            </p>
+          </div>
+        </template>
+        <template id="internship-cgc-detail">
+          <div class="project-detail-inner">
+            <p class="font-sans text-sm leading-relaxed text-text-muted">
+              Python and NumPy automation, phishing simulation analytics, HTML/CSS/JavaScript frontend work, incident reporting, and security risk analysis.
+            </p>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div class="project-grid detail-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-detail-grid>
       {% for project in site.data.projects %}
         {% include project.html p=project %}
       {% endfor %}
+      <div id="project-detail-drawer" class="project-detail-drawer is-hidden" data-detail-drawer></div>
     </div>
   </div>
 </section>
 
-<!-- Awards & Publications Section -->
 <section class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="font-display text-2xl font-semibold text-text mb-2">Awards & Publications</h2>
@@ -75,4 +123,3 @@ title: Syed Abraham Ahmed
     </div>
   </div>
 </section>
-

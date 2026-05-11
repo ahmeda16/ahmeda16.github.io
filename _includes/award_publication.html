@@ -1,5 +1,4 @@
 <div class="flex items-start gap-6 py-6">
-  <!-- Image (clickable, links to URL) -->
   {% if include.item.image %}
   <a href="{{ include.item.url }}" target="_blank" rel="noopener" class="flex-shrink-0 no-underline">
     <img
@@ -10,7 +9,6 @@
   </a>
   {% endif %}
 
-  <!-- Text content -->
   <div class="flex-1 min-w-0">
     <h3 class="font-display font-semibold text-text leading-snug">
       {{ include.item.title }}

@@ -6,13 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Prose body text color — override unresolved --tw-prose-body variable */
 .prose {
   color: #404040;
 }
 
-/* Link styles — RoyalBlue (LaTeX dvipsnames #0071BC) */
-/* Only targets content links; nav/card/image links use class="no-underline" and are excluded */
 a:not(.no-underline) {
   color: #0071BC;
   text-decoration-color: #93c5fd;
@@ -22,4 +19,204 @@ a:not(.no-underline) {
 
 a:not(.no-underline):hover {
   color: #00508a;
+}
+
+.project-panel {
+  position: relative;
+}
+
+.detail-card {
+  display: block;
+  width: 100%;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.project-grid .detail-card,
+.project-grid .project-panel-preview {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-grid .project-panel-media {
+  flex: 0 0 auto;
+  background: #f9fafb;
+}
+
+.project-grid .project-panel-media img,
+.project-grid .project-panel-media video {
+  display: block;
+}
+
+.project-grid .project-panel-copy {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.project-grid .project-panel-title {
+  display: flex;
+  min-height: 4.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-panel:hover {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.08);
+}
+
+.detail-card.is-active {
+  transform: none;
+  box-shadow: 0 10px 24px rgb(0 0 0 / 0.08);
+}
+
+.detail-card::after {
+  content: "+";
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 0.92);
+  color: #666666;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.detail-card.is-active::after {
+  content: "-";
+}
+
+.detail-card:focus-visible {
+  outline: 2px solid #0071BC;
+  outline-offset: 3px;
+}
+
+.project-detail-drawer {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgb(0 0 0 / 0.08);
+}
+
+.project-detail-drawer.is-hidden {
+  display: none;
+}
+
+.project-detail-inner {
+  padding: 1rem;
+}
+
+.project-detail-heading {
+  padding-right: 2.25rem;
+}
+
+.project-detail-label {
+  margin-bottom: 0.35rem;
+  color: #737373;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-detail-meta {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-detail-tags span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d4d4d4;
+  border-radius: 9999px;
+  background: #fafafa;
+  color: #404040;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1;
+  padding: 0.35rem 0.55rem;
+}
+
+.project-detail-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #525252;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.project-detail-list li + li {
+  margin-top: 0.45rem;
+}
+
+.project-detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-detail-links a {
+  color: #0071BC;
+}
+
+.project-detail-links a:hover {
+  color: #00508a;
+}
+
+.project-detail-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-detail-media img,
+.project-detail-media video {
+  max-height: 28rem;
+  object-fit: contain;
+}
+
+.project-detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+}
+
+.project-detail-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  background: #f9fafb;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .internship-grid .project-detail-inner {
+    padding: 1.25rem;
+  }
+
+  .project-detail-meta {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
 }

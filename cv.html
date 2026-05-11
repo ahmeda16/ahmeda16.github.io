@@ -3,7 +3,6 @@ layout: cv
 title: CV - Syed Abraham Ahmed
 ---
 
-<!-- Header -->
 <header class="flex flex-col md:flex-row print:flex-row md:items-center print:items-center gap-6 pb-6 border-b border-border-subtle">
   <div class="flex-1">
     <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">{{ site.name }}</h1>
@@ -38,7 +37,6 @@ title: CV - Syed Abraham Ahmed
   </div>
 </header>
 
-<!-- Education -->
 <section class="mt-8">
   <h2 class="font-display text-2xl font-semibold text-text mb-4">Education</h2>
   {% for school in site.data.education %}
@@ -68,7 +66,6 @@ title: CV - Syed Abraham Ahmed
   {% endfor %}
 </section>
 
-<!-- Employment -->
 <section class="mt-8">
   <h2 class="font-display text-2xl font-semibold text-text mb-4">Employment</h2>
   {% for job in site.data.employment %}
@@ -99,7 +96,6 @@ title: CV - Syed Abraham Ahmed
   {% endfor %}
 </section>
 
-<!-- Extracurriculars -->
 <section class="mt-8">
   <h2 class="font-display text-2xl font-semibold text-text mb-4">Extracurriculars</h2>
   {% for item in site.data.extracurriculars %}
@@ -131,4 +127,3 @@ title: CV - Syed Abraham Ahmed
   </div>
   {% endfor %}
 </section>
-

@@ -1,10 +1,47 @@
+- id: robotic-arm-color-sorter
+  title: "Robotic Arm Color Sorter"
+  organization: "Course"
+  date: "Apr 2026"
+  description: "ECE 4180 Introduction to Robotics project: a vision-guided robotic arm that detected colored cubes, calibrated workspace coordinates, and sorted blocks using camera feedback and arm control."
+  url:
+  image: "robotic-arm-color-sorter-arm.jpg"
+  images:
+    - "robotic-arm-color-sorter-arm.jpg"
+    - "robotic-arm-color-sorter-team.jpg"
+    - "robotic-arm-color-sorter.png"
+  role: "Robotics course project contributor"
+  stack:
+    - "Computer vision"
+    - "Camera calibration"
+    - "Robotic arm control"
+    - "Workspace mapping"
+    - "Python"
+  highlights:
+    - "This was a very physical project: the camera view had to line up with the arm's coordinate frame closely enough that a color detection result could become a real pick target."
+    - "Most of the useful debugging happened at the boundary between software and hardware, tuning lighting, workspace calibration, and motion assumptions until the arm behaved consistently."
+    - "The final demo tied together the vision pipeline, coordinate conversion, and arm commands so the system could identify colored cubes and sort them on the table."
+  video:
+
 - id: stuart
   title: "Stuart: The Smart Micromouse Maze Solver"
-  organization: "Personal"
-  date: "March 2026"
-  description: "PCB-based micromouse with deterministic maze exploration and a PPO reinforcement learning policy trained to minimize traversal time."
+  organization: "Course"
+  date: "Mar 2026"
+  description: "ECE 4600 Capstone Project: a PCB-based micromouse with deterministic maze exploration and a PPO reinforcement learning policy trained to minimize traversal time."
   url:
   image: "stuart-1.jpg"
+  images:
+    - "stuart-1.jpg"
+  role: "Personal robotics and reinforcement learning project"
+  stack:
+    - "PCB design"
+    - "Embedded systems"
+    - "Maze solving"
+    - "PPO"
+    - "Reinforcement learning"
+  highlights:
+    - "Stuart treats micromouse as both an embedded systems project and a learning problem, starting from a compact PCB-based robot rather than only a simulator."
+    - "The deterministic maze solver gives the robot a reliable exploration baseline, which matters because the learned policy still needs clean state information."
+    - "The PPO side focuses on traversal time. Once the maze is known, the policy can try faster routes and control choices while still building on the classical solver."
   video:
 
 - id: abraham-gpt
@@ -14,15 +51,45 @@
   description: "Fine-tuned GPT-2 on message history with conversation context, preprocessing pipelines, and LLM-based evaluation."
   url:
   image: "abraham-gpt.jpeg"
+  images:
+    - "abraham-gpt.jpeg"
+  role: "Personal generative AI project"
+  stack:
+    - "Python"
+    - "GPT-2"
+    - "Fine-tuning"
+    - "Data preprocessing"
+    - "LLM evaluation"
+  highlights:
+    - "AbrahamGPT started with turning messy message history into training data that kept enough conversation context around each reply."
+    - "I fine-tuned GPT-2 because it was small enough to iterate on locally while still being expressive enough to pick up tone, phrasing, and repeated conversational habits."
+    - "The evaluation loop compared generated replies for style and relevance, which was more useful than only watching training loss."
   video:
 
 - id: rover-2
   title: "Project Perry Embedded Subsystem"
   organization: "UMRT"
   date: "Jan 2025"
-  description: "Embedded subsystem redesign for the University of Manitoba Robotics Team second rover, with a single board computer and a microcontroller."
-  url:
+  description: "Embedded subsystem development for the University of Manitoba Robotics Team's second rover, improving the single-board computer and microcontroller split for cleaner rover integration."
+  url: "https://umrt.ca"
   image: "pp-2-embedded.png"
+  images:
+    - "pp-2-embedded.png"
+  role: "UMRT systems and embedded contributor"
+  stack:
+    - "Single-board computer"
+    - "Microcontroller"
+    - "CAN"
+    - "UART"
+    - "Power distribution"
+    - "Rover architecture"
+  highlights:
+    - "Project Perry improved the rover embedded architecture after the first platform showed which interfaces were awkward in practice."
+    - "The system keeps high-level ROS2 work on the Jetson separate from microcontroller-managed I/O. CAN, UART, I2C, camera, GPS, motor, and power interfaces are laid out explicitly."
+    - "The block diagram made the architecture easier to reason about during integration and easier for later UMRT contributors to pick up."
+  links:
+    - label: "UMRT"
+      url: "https://umrt.ca"
   video:
 
 - id: rover-1
@@ -30,15 +97,160 @@
   organization: "UMRT"
   date: "Aug 2024"
   description: "Inaugural rover built for the University of Manitoba Robotics Team's first Canadian International Rover Challenge entry in August 2024."
-  url:
+  url: "https://umrt.ca"
   image: "pp-1.png"
+  images:
+    - "pp-1.png"
+  role: "UMRT founder, systems lead, and embedded lead"
+  stack:
+    - "Mobile robotics"
+    - "Embedded systems"
+    - "Systems engineering"
+    - "Team leadership"
+    - "Field testing"
+  highlights:
+    - "Prairie Pioneer was the first rover UMRT brought to competition, so the work covered team process, integration habits, and the robot itself."
+    - "My work sat around systems and embedded integration, helping mechanical, electrical, and software decisions fit together well enough for field testing."
+    - "The rover made it to the Canadian International Rover Challenge in August 2024, where UMRT placed 11th among 20 international teams in its first appearance."
+  links:
+    - label: "UMRT"
+      url: "https://umrt.ca"
+  video:
+
+- id: cec-2024-app
+  title: "Hector Analysis: CEC 2024 Programming"
+  organization: "Canadian Engineering Competition"
+  date: "Mar 2024"
+  description: "Team Hector's eight-hour CEC 2024 programming entry: a Python/Tkinter tool for planning two offshore drilling rigs across 30 days of map data while balancing resource extraction against preservation impact."
+  url: "https://github.com/ahmeda16/cec-2024-programming-competition"
+  image: "cec2024.jpeg"
+  images:
+    - "cec2024.jpeg"
+    - "cec-2024-interface.png"
+    - "cec-2024-heatmaps.png"
+    - "cec-2024-mutation.png"
+  role: "Team Hector contributor"
+  stack:
+    - "Python 3.11"
+    - "Tkinter"
+    - "NumPy"
+    - "Matplotlib"
+    - "CSV time-series data"
+  highlights:
+    - "The core challenge was making an eight-hour competition solution that could be inspected quickly. The Tkinter interface put the day slider, preservation choice, rig coordinates, collection totals, and map view in one place."
+    - "Behind the interface, the data pipeline read 100x100 CSV maps across 30 days and normalized ocean cells while treating land as invalid for rig movement."
+    - "The route optimizer was framed as a genetic algorithm, where an individual represented two 30-day rig paths and the fitness score balanced oil, metal, and helium gain against preservation damage."
+  links:
+    - label: "GitHub repo"
+      url: "https://github.com/ahmeda16/cec-2024-programming-competition"
+  video:
+
+- id: wec-full-stack-app
+  title: "CogIN: WEC 2024 Full-Stack Prototype"
+  organization: "Western Engineering Competition"
+  date: "Jan 2024"
+  description: "Team Please Compile's WEC 2024 prototype for CogIN, a Winnipeg startup concept focused on supporting people with cognitive disabilities through scheduling, journaling, notifications, and caregiver visibility controls."
+  url: "https://github.com/ahmeda16/pleasecompile-wec2024-cogin"
+  image: "wec2024.jpeg"
+  images:
+    - "wec2024.jpeg"
+    - "wec-2024-schedule.png"
+    - "wec-2024-login.png"
+    - "wec-2024-cogin-logo.png"
+  role: "Team Please Compile contributor"
+  stack:
+    - "Node.js"
+    - "Express.js"
+    - "PostgreSQL"
+    - "AWS RDS"
+    - "Bootstrap 5"
+    - "HTML/CSS/JavaScript"
+  highlights:
+    - "For WEC, we treated CogIN like a small product. The client needed a simple daily planner, while caregivers needed visibility without seeing everything by default."
+    - "The backend is a Node/Express app with PostgreSQL queries for users, events, and journals, while the frontend uses Bootstrap screens for login, weekly review, daily modals, and editing."
+    - "The public/private flags were a small but important design detail because they made caregiver access part of the data model rather than only a UI convention."
+  links:
+    - label: "GitHub repo"
+      url: "https://github.com/ahmeda16/pleasecompile-wec2024-cogin"
+  video:
+
+- id: hydrogen-wavefunction
+  title: "Hydrogen Wavefunction Visualizer"
+  organization: "Personal"
+  date: "Aug 2023"
+  description: "Physics visualization project that computes hydrogen atom wavefunctions from quantum numbers n, l, and m_l, then plots real, imaginary, and probability-density contours."
+  url: "https://github.com/ahmeda16/hydrogen-wavefunction"
+  image: "hydrogen-wavefunction.png"
+  images:
+    - "hydrogen-wavefunction.png"
+    - "hydrogen-wavefunction-real.png"
+    - "hydrogen-wavefunction-complex.png"
+  role: "Personal physics/programming project"
+  stack:
+    - "Python 3.11"
+    - "NumPy"
+    - "SciPy"
+    - "Matplotlib"
+    - "Jupyter Notebook"
+  highlights:
+    - "The goal was to make the hydrogen wavefunction feel less abstract by turning the quantum numbers n, l, and m_l into actual shapes."
+    - "The code computes the radial term with generalized Laguerre polynomials and Bohr-radius scaling, then combines it with the angular spherical-harmonic term from associated Legendre polynomials."
+    - "The plots show the real component, imaginary component, and |psi|^2 probability density, which makes it easier to see how the math changes the orbital structure."
+  links:
+    - label: "GitHub repo"
+      url: "https://github.com/ahmeda16/hydrogen-wavefunction"
+  video:
+
+- id: lorentz-attractor
+  title: "Lorenz Attractor"
+  organization: "Personal"
+  date: "Aug 2023"
+  description: "SciPy ODE simulation of the Lorenz system showing how tiny perturbations in initial conditions split into visibly different chaotic trajectories."
+  url: "https://github.com/ahmeda16/lorentz-attractor"
+  image: "lorentz-attractor.png"
+  images:
+    - "lorentz-attractor.png"
+  role: "Personal math/programming project"
+  stack:
+    - "Python"
+    - "NumPy"
+    - "SciPy solve_ivp"
+    - "Matplotlib"
+    - "FuncAnimation"
+  highlights:
+    - "This is a compact way to see chaos directly: ten trajectories start almost on top of each other and then visibly separate."
+    - "The simulation uses SciPy's solve_ivp on the classic Lorenz parameters sigma=10, rho=28, and beta=8/3 over t=0..50."
+    - "The Matplotlib animation keeps the 3D axes fixed on a dark scene, so the sensitive dependence on the 1e-4 initial perturbations is easy to follow."
+  links:
+    - label: "GitHub repo"
+      url: "https://github.com/ahmeda16/lorentz-attractor"
   video:
 
 - id: cdh-tsat6-camera-driver
-  title: "CDH-TSAT6 Cubesat Camera Driver"
+  title: "CDH-TSAT6 piCAM Camera Driver"
   organization: "UMSATS"
   date: "May 2023"
-  description: "Low-level camera driver in C using DMA over UART for high-throughput image capture to onboard memory on TSAT-6's CDH subsystem."
-  url:
-  image: "picam-1.png"
+  description: "STM32L4 camera driver work for TSAT-6's Command and Data Handling subsystem, bringing up the SkyFox Labs piCAM over UART, receiving image data with DMA, and converting the camera's ASCII payload into JPEG bytes."
+  url: "https://github.com/UMSATS/cdh-tsat"
+  image: "tsat6-magellan-cleanroom.jpg"
+  images:
+    - "tsat6-magellan-cleanroom.jpg"
+    - "tsat6-picam-team-capture.jpg"
+    - "picam-1.png"
+  role: "UMSATS TSAT-6 CDH lead"
+  stack:
+    - "C"
+    - "STM32CubeIDE"
+    - "STM32 HAL"
+    - "UART4"
+    - "DMA"
+    - "STM32L452RE"
+    - "piCAM"
+  highlights:
+    - "The camera driver files started in March 2023 and reached board-level TSAT-6 integration by late May, with the final boardV1 commit unit-tested in the CDH repo."
+    - "The driver handled the piCAM boot sequence, including temporarily disabling UART4 and controlling the ON/RX/TX lines so the camera did not bootstrap into the wrong state during power-up."
+    - "For image capture, the code received fixed-length piCAM sentences through UART DMA, watched for the FACE terminator, then converted the ASCII hex payload into binary JPEG data in the static image buffer."
+  links:
+    - label: "GitHub repo"
+      url: "https://github.com/UMSATS/cdh-tsat"
   video:

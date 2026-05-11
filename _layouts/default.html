@@ -10,7 +10,6 @@
   </main>
   {% include footer.html %}
 
-  <!-- Mouseover video toggle script -->
   <script>
     document.querySelectorAll('.publication-mousecell').forEach(function(el) {
       var video = el.querySelector('video');
@@ -26,6 +25,68 @@
         });
       }
     });
+  </script>
+
+  <script>
+    (function() {
+      function placeDrawer(trigger, drawer, triggers) {
+        var triggerTop = trigger.offsetTop;
+        var rowEnd = trigger;
+
+        triggers.forEach(function(candidate) {
+          if (Math.abs(candidate.offsetTop - triggerTop) < 2) {
+            rowEnd = candidate;
+          }
+        });
+
+        rowEnd.insertAdjacentElement('afterend', drawer);
+      }
+
+      document.querySelectorAll('[data-detail-grid]').forEach(function(grid) {
+        var drawer = grid.querySelector('[data-detail-drawer]');
+        var triggers = Array.prototype.slice.call(grid.querySelectorAll('[data-detail-trigger]'));
+
+        if (!drawer || !triggers.length) {
+          return;
+        }
+
+        triggers.forEach(function(trigger) {
+          trigger.addEventListener('click', function() {
+            var isActive = trigger.classList.contains('is-active');
+
+            triggers.forEach(function(item) {
+              item.classList.remove('is-active');
+              item.setAttribute('aria-expanded', 'false');
+            });
+
+            if (isActive) {
+              drawer.classList.add('is-hidden');
+              drawer.innerHTML = '';
+              return;
+            }
+
+            var template = document.getElementById(trigger.dataset.detailTemplate);
+            if (!template) {
+              return;
+            }
+
+            drawer.innerHTML = '';
+            drawer.appendChild(template.content.cloneNode(true));
+            drawer.classList.remove('is-hidden');
+            placeDrawer(trigger, drawer, triggers);
+            trigger.classList.add('is-active');
+            trigger.setAttribute('aria-expanded', 'true');
+          });
+        });
+
+        window.addEventListener('resize', function() {
+          var active = grid.querySelector('[data-detail-trigger].is-active');
+          if (active && !drawer.classList.contains('is-hidden')) {
+            placeDrawer(active, drawer, triggers);
+          }
+        });
+      });
+    })();
   </script>
 </body>
 </html>

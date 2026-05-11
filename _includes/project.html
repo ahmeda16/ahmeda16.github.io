@@ -1,20 +1,131 @@
-<div class="bg-white rounded-lg overflow-hidden border border-gray-300 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 ease-out">
-  <a href="{{ include.p.url }}" target="_blank" rel="noopener" class="block no-underline">
-    <div class="aspect-square overflow-hidden">
+<button
+  type="button"
+  class="detail-card project-panel bg-white rounded-lg overflow-hidden border border-gray-300 shadow-sm transition-all duration-200 ease-out"
+  data-detail-trigger
+  data-detail-template="project-{{ include.p.id }}-detail"
+  aria-expanded="false"
+  aria-controls="project-detail-drawer">
+  <span class="project-panel-preview block">
+    <span class="project-panel-media block aspect-square overflow-hidden">
       {% if include.p.video %}
       <video autoplay loop muted playsinline class="w-full h-full object-cover">
         <source src="{{ '/images/' | append: include.p.video | relative_url }}" type="video/mp4">
-        <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.h.title }}" class="w-full h-full object-cover">
+        <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.p.title }}" class="w-full h-full object-cover">
       </video>
+      {% elsif include.p.image %}
+      <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.p.title }}" class="w-full h-full object-cover">
       {% else %}
-      <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.h.title }}" class="w-full h-full object-cover">
+      <span class="flex h-full w-full items-center justify-center bg-gray-100">
+        <span class="font-display text-4xl font-semibold text-gray-400">{{ include.p.title | slice: 0 }}</span>
+      </span>
       {% endif %}
-    </div>
-    <div class="p-4">
-      <h3 class="font-display font-semibold text-text">
+    </span>
+    <span class="project-panel-copy block p-4">
+      {% if include.p.organization or include.p.date %}
+      <span class="block font-sans text-xs font-medium uppercase tracking-wide text-text-muted">
+        {% if include.p.organization %}{{ include.p.organization }}{% endif %}
+        {% if include.p.organization and include.p.date %} / {% endif %}
+        {% if include.p.date %}{{ include.p.date }}{% endif %}
+      </span>
+      {% endif %}
+      <span class="project-panel-title block font-display font-semibold text-text text-center">
+        {{ include.p.title }}
+      </span>
+    </span>
+  </span>
+</button>
+
+<template id="project-{{ include.p.id }}-detail">
+  <div class="project-detail-inner">
+    <div class="project-detail-heading">
+      {% if include.p.organization or include.p.date %}
+      <p class="font-sans text-xs font-medium uppercase tracking-wide text-text-muted">
+        {% if include.p.organization %}{{ include.p.organization }}{% endif %}
+        {% if include.p.organization and include.p.date %} / {% endif %}
+        {% if include.p.date %}{{ include.p.date }}{% endif %}
+      </p>
+      {% endif %}
+      <h3 class="font-display text-xl font-semibold text-text">
         {{ include.p.title }}
       </h3>
-      <p class="font-sans text-sm text-text-muted mt-2">{{ include.p.description }}</p>
     </div>
-  </a>
-</div>
+
+    {% if include.p.description %}
+    <p class="font-sans text-sm leading-relaxed text-text-muted mt-3">
+      {{ include.p.description }}
+    </p>
+    {% endif %}
+
+    {% if include.p.role or include.p.stack %}
+    <div class="project-detail-meta mt-4">
+      {% if include.p.role %}
+      <div>
+        <p class="project-detail-label">Role</p>
+        <p class="font-sans text-sm leading-relaxed text-text-muted">
+          {{ include.p.role }}
+        </p>
+      </div>
+      {% endif %}
+
+      {% if include.p.stack %}
+      <div>
+        <p class="project-detail-label">Stack</p>
+        <div class="project-detail-tags">
+          {% for item in include.p.stack %}
+          <span>{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if include.p.highlights %}
+    <div class="mt-4">
+      <p class="project-detail-label">Project notes</p>
+      <ul class="project-detail-list">
+        {% for item in include.p.highlights %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if include.p.images %}
+    <div class="project-detail-gallery mt-4">
+      {% for image in include.p.images %}
+      <img src="{{ '/images/' | append: image | relative_url }}" alt="{{ include.p.title }} image {{ forloop.index }}">
+      {% endfor %}
+    </div>
+    {% elsif include.p.image or include.p.video %}
+    <div class="project-detail-media mt-4 overflow-hidden rounded border border-gray-200 bg-gray-50">
+      {% if include.p.video %}
+      <video autoplay loop muted playsinline controls class="w-full object-contain">
+        <source src="{{ '/images/' | append: include.p.video | relative_url }}" type="video/mp4">
+        {% if include.p.image %}
+        <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.p.title }}" class="w-full object-contain">
+        {% endif %}
+      </video>
+      {% elsif include.p.image %}
+      <img src="{{ '/images/' | append: include.p.image | relative_url }}" alt="{{ include.p.title }}" class="w-full object-contain">
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if include.p.links %}
+    <div class="project-detail-links mt-4">
+      {% for link in include.p.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener" class="inline-flex font-sans text-sm font-medium no-underline">
+        {{ link.label }}
+      </a>
+      {% endfor %}
+    </div>
+    {% elsif include.p.url %}
+    <div class="project-detail-links mt-4">
+      <a href="{{ include.p.url }}" target="_blank" rel="noopener" class="inline-flex font-sans text-sm font-medium no-underline">
+        View project
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</template>
