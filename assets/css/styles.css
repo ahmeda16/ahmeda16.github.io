@@ -212,10 +212,6 @@ a:not(.no-underline):hover {
 }
 
 @media (min-width: 768px) {
-  .internship-grid .project-detail-inner {
-    padding: 1.25rem;
-  }
-
   .project-detail-meta {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   }
