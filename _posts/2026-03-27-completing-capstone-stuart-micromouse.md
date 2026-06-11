@@ -259,7 +259,7 @@ when the cost of executing the path is considered.
 
 ## What I Took Away
 
-The biggest lesson was that RL for robotics was the problem formulation matters a gret deal being, what the state includes, what actions are allowed, reward shaping as a whole, and whether the policy output can actually be executed by the robot.
+The biggest lesson was that RL for robotics was the problem formulation matters a great deal being, what the state includes, what actions are allowed, reward shaping as a whole, and whether the policy output can actually be executed by the robot.
 
 The hardware, sensing, control, deterministic solver, and RL components were each validated and complete end to end physical maze solving still had integration challenges inside the real maze. That limitation is important cause it means the RL result should be read as a fastest path planning result in simulation, based on the robot's command structure. That is still exactly why I liked this capstone. It made the abstraction boundaries visible. The learned planner depended on a deterministic map. The reward depended on a timing model. The timing model depended on real motion primitives. The motion primitives depended on control and sensing. Every layer of abstraction was in direct need of another, and every layer had assumptions that the next layer either depended on or exposed.
 
