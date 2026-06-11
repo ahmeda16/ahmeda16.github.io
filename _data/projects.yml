@@ -26,22 +26,34 @@
   title: "Stuart: The Smart Micromouse Maze Solver"
   organization: "Course"
   date: "Mar 2026"
-  description: "ECE 4600 Capstone Project: a PCB-based micromouse with deterministic maze exploration and a PPO reinforcement learning policy trained to minimize traversal time."
-  url:
-  image: "stuart-1.jpg"
+  description: "ECE 4600 Capstone Project: an IEEE Micromouse-inspired robot combining embedded control, maze exploration, deterministic shortest-path solving, and reinforcement learning based fastest-path planning."
+  url: "/blog/2026/03/27/completing-capstone-stuart-micromouse/"
+  image: "stuart-capstone-team-maze.jpeg"
   images:
-    - "stuart-1.jpg"
-  role: "Personal robotics and reinforcement learning project"
+    - "stuart-capstone-team-maze.jpeg"
+    - "stuart-capstone-team-robot.jpeg"
+    - "stuart-capstone-abraham-robot.jpeg"
+    - "stuart-capstone-maze-photo.jpg"
+  role: "ECE 4600 capstone team member"
   stack:
-    - "PCB design"
+    - "Micromouse"
     - "Embedded systems"
     - "Maze solving"
-    - "PPO"
     - "Reinforcement learning"
+    - "Maskable PPO"
+    - "Gymnasium"
+    - "Reward shaping"
+    - "Action masking"
+    - "Dijkstra baseline"
+    - "Python"
   highlights:
-    - "Stuart treats micromouse as both an embedded systems project and a learning problem, starting from a compact PCB-based robot rather than only a simulator."
-    - "The deterministic maze solver gives the robot a reliable exploration baseline, which matters because the learned policy still needs clean state information."
-    - "The PPO side focuses on traversal time. Once the maze is known, the policy can try faster routes and control choices while still building on the classical solver."
+    - "Stuart was built as a complete Micromouse-style capstone platform with a physical 8x8 maze, compact robot hardware, embedded motion control, and planning software."
+    - "The planning stack compared a deterministic Dijkstra shortest-path baseline with a Maskable PPO policy trained to reduce traversal time using fewer turns and longer forward commands."
+    - "The reinforcement learning environment used discrete, robot-shaped actions so policy outputs could be converted into compact commands for the embedded controller."
+    - "The project won IEEE Winnipeg Section 1st Prize 2026 for the capstone."
+  links:
+    - label: "Capstone blog post"
+      url: "/blog/2026/03/27/completing-capstone-stuart-micromouse/"
   video:
 
 - id: abraham-gpt

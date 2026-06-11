@@ -20,7 +20,7 @@ gem install bundler
 ```bash
 git clone {git link}
 cd {workspace folder}
-sudo bundle install
+bundle install
 ```
 
 3) Serve the Website
